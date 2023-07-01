@@ -1,9 +1,10 @@
 import java.util.Objects;
 
-public class Circle implements Shape {
+public class Circle extends Shape {
     private Double radius;
 
-    Circle(Double radius) {
+    Circle(Double radius, Color color) {
+        super(color);
         this.radius = radius;
     }
 
@@ -18,8 +19,8 @@ public class Circle implements Shape {
     }
 
     @Override
-    public void paint(String color) {
-        System.out.println("Painting the circle the color " + color);
+    protected String getTypeName() {
+        return "circle";
     }
 
     @Override

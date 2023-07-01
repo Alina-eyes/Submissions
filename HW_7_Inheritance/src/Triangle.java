@@ -1,11 +1,12 @@
 import java.util.Objects;
 
-public class Triangle implements Shape {
+public class Triangle extends Shape {
     private Point p1;
     private Point p2;
     private Point p3;
 
-    Triangle(Point p1, Point p2, Point p3) {
+    Triangle(Point p1, Point p2, Point p3, Color color) {
+        super(color);
         this.p1 = p1;
         this.p2 = p2;
         this.p3 = p3;
@@ -36,8 +37,8 @@ public class Triangle implements Shape {
     }
 
     @Override
-    public void paint(String color) {
-        System.out.println("Painting the triangle the color " + color);
+    protected String getTypeName() {
+        return "triangle";
     }
 
     @Override

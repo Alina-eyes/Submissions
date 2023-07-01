@@ -1,10 +1,11 @@
 import java.util.Objects;
 
-public class Rectangle implements Shape {
+public class Rectangle extends Shape {
     private Double width;
     private Double height;
 
-    Rectangle(Double width, Double height) {
+    Rectangle(Double width, Double height, Color color) {
+        super(color);
         this.width = width;
         this.height = height;
     }
@@ -20,8 +21,8 @@ public class Rectangle implements Shape {
     }
 
     @Override
-    public void paint(String color) {
-        System.out.println("Painting the rectangle the color " + color);
+    protected String getTypeName() {
+        return "rectangle";
     }
 
     @Override

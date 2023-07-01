@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HW_7_Inheritance/HW_7_Inheritance.iml" filepath="$PROJECT_DIR$/HW_7_Inheritance/HW_7_Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/HW_8_Interfaces/HW_8_Interfaces.iml" filepath="$PROJECT_DIR$/HW_8_Interfaces/HW_8_Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW_9_Boxing/HW_9_Boxing.iml" filepath="$PROJECT_DIR$/HW_9_Boxing/HW_9_Boxing.iml" />
       <module fileurl="file://$PROJECT_DIR$/Submissions.iml" filepath="$PROJECT_DIR$/Submissions.iml" />
     </modules>
   </component>
