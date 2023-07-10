@@ -7,7 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="HW_8_Interfaces" />
-    <orderEntry type="library" name="junit.jupiter" level="project" />
   </component>
 </module>

@@ -36,20 +36,6 @@ public class Main {
         double averageAge = (double) sumOfAllAges / users.size();
         System.out.println("Average age is: " + averageAge);
 
-        List<User> usersWithLastNameSorA = users.stream()
-            .filter(user -> user.getLastName().startsWith("S") || user.getLastName().startsWith("A"))
-            .collect(Collectors.toList());
-
-        System.out.println("Users whose last names start with S or A: " + usersWithLastNameSorA);
-        System.out.println("Are there users whose last names start with S or A? " + (usersWithLastNameSorA.size() > 0 ? "yes" : "no"));
-
-        List<User> underageUsers = users.stream()
-            .filter(user -> user.getAge() < 18)
-            .collect(Collectors.toList());
-
-        System.out.println("Users whose age is less than 18: " + underageUsers);
-        System.out.println("Are all users 18+? " + (underageUsers.size() == 0 ? "yes" : "no"));
-
         // Sort the list in place without creating a new one
         Collections.sort(
             users,
@@ -63,5 +49,19 @@ public class Main {
         );
 
         System.out.println("Users sorted by firstName with age as a tie-breaker: " + users);
+
+        List<User> usersWithLastNameSorA = users.stream()
+            .filter(user -> user.getLastName().startsWith("S") || user.getLastName().startsWith("A"))
+            .collect(Collectors.toList());
+
+        System.out.println("Users whose last names start with S or A: " + usersWithLastNameSorA);
+        System.out.println("Are there users whose last names start with S or A? " + (usersWithLastNameSorA.size() > 0 ? "yes" : "no"));
+
+        List<User> underageUsers = users.stream()
+            .filter(user -> user.getAge() < 18)
+            .collect(Collectors.toList());
+
+        System.out.println("Users whose age is less than 18: " + underageUsers);
+        System.out.println("Are all users 18+? " + (underageUsers.size() == 0 ? "yes" : "no"));
     }
 }

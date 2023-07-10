@@ -5,10 +5,12 @@
       <module fileurl="file://$PROJECT_DIR$/HW_10_Collection/HW_10_Collection.iml" filepath="$PROJECT_DIR$/HW_10_Collection/HW_10_Collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/HW_11_SetAndMap/HW_11_SetAndMap.iml" filepath="$PROJECT_DIR$/HW_11_SetAndMap/HW_11_SetAndMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/HW_12_Java8/HW_12_Java8.iml" filepath="$PROJECT_DIR$/HW_12_Java8/HW_12_Java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW_13_Junit/HW_13_Junit.iml" filepath="$PROJECT_DIR$/HW_13_Junit/HW_13_Junit.iml" />
       <module fileurl="file://$PROJECT_DIR$/HW_7_Inheritance/HW_7_Inheritance.iml" filepath="$PROJECT_DIR$/HW_7_Inheritance/HW_7_Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/HW_8_Interfaces/HW_8_Interfaces.iml" filepath="$PROJECT_DIR$/HW_8_Interfaces/HW_8_Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/HW_9_Boxing/HW_9_Boxing.iml" filepath="$PROJECT_DIR$/HW_9_Boxing/HW_9_Boxing.iml" />
       <module fileurl="file://$PROJECT_DIR$/Submissions.iml" filepath="$PROJECT_DIR$/Submissions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TEST/TEST.iml" filepath="$PROJECT_DIR$/TEST/TEST.iml" />
     </modules>
   </component>
 </project>
