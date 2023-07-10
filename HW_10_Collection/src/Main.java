@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -43,6 +45,43 @@ public class Main {
 
         // So in conclusion LinkedList can be much faster but it needs to be carefully implemented with
         // iterator removals that are O(1) in the LL.
+
+        ArrayList<Integer> numbers1 = new ArrayList<>();
+        for (int i=0; i<10; ++i) {
+            numbers1.add(rn.nextInt(100));
+        }
+        ArrayList<Integer> numbers2 = new ArrayList<>();
+        for (int i=0; i<100; ++i) {
+            numbers2.add(rn.nextInt(100));
+        }
+        System.out.println("Original array: " + Arrays.toString(numbers1.toArray()));
+        partitionArray(numbers1, 50);
+        partitionArray(numbers1, 30);
+        partitionArray(numbers1, 10);
+
+        System.out.println("Original array: " + Arrays.toString(numbers2.toArray()));
+        partitionArray(numbers2, 50);
+        partitionArray(numbers2, 60);
+        partitionArray(numbers2, 40);
+    }
+
+    public static void partitionArray(ArrayList<Integer> numbers, int X) {
+        int lowIndex = 0;
+        int highIndex = numbers.size() - 1;
+        while(lowIndex <= highIndex) {
+            int index = lowIndex;
+            Integer currentElement = numbers.get(index);
+            if (currentElement > X) {
+                int tmp = numbers.get(highIndex);
+                numbers.set(highIndex, currentElement);
+                numbers.set(index, tmp);
+                highIndex -= 1;
+            } else {
+                lowIndex += 1;
+            }
+        }
+
+        System.out.println("Partition point " + X + ": " + Arrays.toString(numbers.toArray()));
     }
 
     public static int simulateCircleNaive(int N, boolean useArrayListInsteadOfLinkedList) {
