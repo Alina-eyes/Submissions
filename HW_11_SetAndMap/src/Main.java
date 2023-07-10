@@ -15,7 +15,7 @@ public class Main {
 
         HashMap<String, Integer> wordOccuranceCount = new HashMap<>();
         for (String word: words) {
-            String normalizedWord = word.toLowerCase().replaceAll("[.,]", "");
+            String normalizedWord = word.replaceAll("[.,]", "");
             Integer oldCount = wordOccuranceCount.getOrDefault(normalizedWord, 0);
             wordOccuranceCount.put(normalizedWord, oldCount + 1);
         }
