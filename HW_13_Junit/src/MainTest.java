@@ -134,6 +134,7 @@ class MainTest {
         assertFalse(Main.areThereAnyUsersWithLastNameStartingWithSorA(ex.users));
     }
 
+
     @RepeatedTest(10)
     void areThereAnyUsersWithLastNameStartingWithSorA_Test3() {
         assertTrue(Main.areThereAnyUsersWithLastNameStartingWithSorA(LIST_OF_OLD_USERS));
